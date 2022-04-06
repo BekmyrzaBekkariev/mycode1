@@ -90,3 +90,40 @@
 // console.log(isChecked || isCase);
 
 // console.log(2 + 2 * 2 !== 8);
+
+
+//№012 Фильмы
+
+// const numberOfFilms = prompt("Cколько фильмов вы уже просмотрели?");
+
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {
+//         nameFilm: Filmestimation
+//     },
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+// const nameFilm = prompt("Один из последних просмотренных фильмов?", ""),
+//       Filmestimation = prompt("На сколько оцените его?", "");
+// console.log(personalMovieDB.movies);
+
+// Решение
+
+const numberOfFilms = +prompt('Cколько фильмов вы уже просмотрели?','');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('Один из последних просмотренных фильмов?'),
+      b = prompt('На сколько оцените его?');
+
+personalMovieDB.movies[a] = b;
+
+console.log(personalMovieDB);
